@@ -1,0 +1,8 @@
+publicHoistPattern:
+  - "*eslint*"
+  - "*prettier*"
+onlyBuiltDependencies:
+  - esbuild
+  - lefthook
+  - sharp
+  - workerd

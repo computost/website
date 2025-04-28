@@ -1,0 +1,36 @@
+{
+  "workers_dev": true,
+  "name": "my-worker",
+  "account_id": "your-account-id",
+  "compatibility_date": "2024-11-18",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./build/server/index.js",
+  "assets": { "directory": "./build/client/" },
+
+  "vars": {
+    "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare",
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "your-database-name",
+      "database_id": "your-database-id",
+      "migrations_dir": "drizzle",
+    },
+  ],
+
+  "env": {
+    "test": {
+      "assets": { "directory": "./public" },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_id": "your-database-id",
+          "migrations_dir": "drizzle",
+        },
+      ],
+      "vars": { "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare" },
+    },
+  },
+}

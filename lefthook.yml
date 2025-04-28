@@ -1,0 +1,11 @@
+pre-commit:
+  commands:
+    lint:
+      run: npm run lint -- --fix {staged_files}
+      exclude:
+        - "*.json"
+        - "*.yaml"
+        - "*.yml"
+      stage_fixed: true
+    typecheck:
+      run: npm run typecheck
