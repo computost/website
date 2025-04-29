@@ -1,8 +1,4 @@
-import * as schema from "~/database/schema";
-
 import type { Route } from "./+types/home";
-
-import { Welcome } from "../welcome/welcome";
 
 export function meta(_: Route.MetaArgs) {
   return [
@@ -11,47 +7,15 @@ export function meta(_: Route.MetaArgs) {
   ];
 }
 
-export async function action({ context, request }: Route.ActionArgs) {
-  const formData = await request.formData();
-  let name = formData.get("name");
-  let email = formData.get("email");
-  if (typeof name !== "string" || typeof email !== "string") {
-    return { guestBookError: "Name and email are required" };
-  }
+// export async function action({ context, request }: Route.ActionArgs) {
+// }
 
-  name = name.trim();
-  email = email.trim();
-  if (!name || !email) {
-    return { guestBookError: "Name and email are required" };
-  }
+// export async function loader({ context }: Route.LoaderArgs) {
+//   return {};
+// }
 
-  try {
-    await context.db.insert(schema.guestBook).values({ email, name });
-  } catch {
-    return { guestBookError: "Error adding to guest book" };
-  }
-}
-
-export async function loader({ context }: Route.LoaderArgs) {
-  const guestBook = await context.db.query.guestBook.findMany({
-    columns: {
-      id: true,
-      name: true,
-    },
-  });
-
-  return {
-    guestBook,
-    message: context.cloudflare.env.VALUE_FROM_CLOUDFLARE,
-  };
-}
-
-export default function Home({ actionData, loaderData }: Route.ComponentProps) {
-  return (
-    <Welcome
-      guestBook={loaderData.guestBook}
-      guestBookError={actionData?.guestBookError}
-      message={loaderData.message}
-    />
-  );
+export default function Home(
+  _ /* { actionData, loaderData } */ : Route.ComponentProps,
+) {
+  return <>Hello, World!</>;
 }
