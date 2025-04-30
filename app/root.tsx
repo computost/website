@@ -25,6 +25,10 @@ export const links: Route.LinksFunction = () => [
   { href: "/computost.svg", rel: "icon", type: "image/svg+xml" },
 ];
 
+export function meta(_: Route.MetaArgs) {
+  return [{ title: "Computost Consulting" }];
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

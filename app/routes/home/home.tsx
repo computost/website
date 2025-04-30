@@ -2,10 +2,6 @@ import { Link } from "react-router";
 
 import type { Route } from "./+types/home";
 
-export function meta(_: Route.MetaArgs) {
-  return [{ title: "Computost Consulting - Home" }];
-}
-
 // export async function action({ context, request }: Route.ActionArgs) {
 // }
 

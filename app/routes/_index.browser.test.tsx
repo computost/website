@@ -53,6 +53,22 @@ it("renders static content", () => {
           </ul>
         </div>
       </nav>
+      <footer>
+        <p>
+          Contact us at
+           
+          <a
+            href="mailto:consulting@computost.com"
+          >
+            consulting@computost.com
+          </a>
+        </p>
+        <p>
+          Copyright © 
+          2025
+           Computost Consulting, LLC
+        </p>
+      </footer>
     </div>
   `);
 
