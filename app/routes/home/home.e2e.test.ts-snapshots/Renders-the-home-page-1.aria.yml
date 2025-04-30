@@ -3,4 +3,51 @@
     - listitem:
       - link "Home":
         - /url: /
-- text: Hello, World!
+    - listitem:
+      - link "Co-op Info":
+        - /url: /coop
+- main:
+  - article:
+    - heading "About Us" [level=2]
+    - paragraph: /We are a small team of software engineering consultants who specialize in Power Platform and Azure technologies\. Our team members have an average of \d+ years of experience working with Power Platform and Microsoft technologies\. In our careers, we have provided consulting to help build large enterprise projects\./
+  - article:
+    - heading "The Co-op Vision" [level=2]
+    - paragraph: Computost is a cooperative governed by a working agreement tailored to maximize dividing business responsibilities and profits to its members. Our vision is to create an inclusive democratic workplace for software consultants.
+  - article:
+    - heading "Services" [level=2]
+    - paragraph: Computost provides software consulting services at a competitive hourly rate. All members are highly skilled and experienced developers. Our experience is primarily with Microsoft products but our services are not limited to Microsoft products.
+  - article:
+    - heading "Our Principals" [level=2]
+    - heading "Quality" [level=3]
+    - paragraph: If anything is worth doing, it’s worth doing right. No job is finished until it meets our standards of documentation, styling, testing, and deployability.
+    - heading "Communication" [level=3]
+    - paragraph: We code in an open kitchen. Everything we make, our customers have access to it at all times.
+    - heading "Maintainability" [level=3]
+    - paragraph: As solution architects, we build everything with support in mind.
+    - heading "Flexibility" [level=3]
+    - paragraph: Your technical solutions should grow with your business. We deliver value in frequent, small intervals, continuing to reassess what you need after each delivery.
+  - article:
+    - heading "Technologies" [level=2]
+    - heading "Power Platform" [level=3]
+    - list:
+      - listitem: Power Apps
+      - listitem: Power Automate
+      - listitem: Power Pages
+    - heading "Azure" [level=3]
+    - list:
+      - listitem: Data Factory
+      - listitem: Function Apps
+      - listitem: Service Bus
+      - listitem: SQL
+    - heading "DevOps" [level=3]
+    - list:
+      - listitem: Azure DevOps
+      - listitem: GitHub
+      - listitem: GitLab
+  - article:
+    - heading "Projects" [level=2]
+    - paragraph: "While we work with customers, we often innovate tools that can provide value for the larger software development community. Below are some of the tools we have created:"
+    - list:
+      - listitem:
+        - link "pac-fetch":
+          - /url: https://github.com/computost/pac-fetch
