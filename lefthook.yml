@@ -4,6 +4,7 @@ pre-commit:
       run: npm run lint -- --fix {staged_files}
       exclude:
         - "*.json"
+        - "*.sql"
         - "*.yaml"
         - "*.yml"
       stage_fixed: true
