@@ -1,0 +1,17 @@
+{
+  "image":"mcr.microsoft.com/devcontainers/javascript-node",
+  "features": {
+    "ghcr.io/joshuanianji/devcontainer-features/mount-pnpm-store:1": {},
+    "ghcr.io/devcontainers-extra/features/lefthook-asdf:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  },
+  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}
