@@ -62,3 +62,9 @@
   - heading "CMS Systems" [level=3]
   - list:
     - listitem: Umbraco
+- contentinfo:
+  - paragraph:
+    - text: Contact us at
+    - link "consulting@computost.com":
+      - /url: mailto:consulting@computost.com
+  - paragraph: /Copyright © \d+ Computost Consulting, LLC/

@@ -16,6 +16,15 @@ export default function Layout(): ReactNode {
         <NavigationMenuItem to="/services">Services</NavigationMenuItem>
       </NavigationMenu>
       <Outlet />
+      <footer>
+        <p>
+          Contact us at{" "}
+          <a href="mailto:consulting@computost.com">consulting@computost.com</a>
+        </p>
+        <p>
+          Copyright &copy; {new Date().getFullYear()} Computost Consulting, LLC
+        </p>
+      </footer>
     </>
   );
 }

@@ -58,3 +58,9 @@
       - listitem:
         - link "pac-fetch":
           - /url: https://github.com/computost/pac-fetch
+- contentinfo:
+  - paragraph:
+    - text: Contact us at
+    - link "consulting@computost.com":
+      - /url: mailto:consulting@computost.com
+  - paragraph: /Copyright © \d+ Computost Consulting, LLC/

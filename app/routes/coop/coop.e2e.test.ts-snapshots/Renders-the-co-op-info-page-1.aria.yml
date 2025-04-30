@@ -25,3 +25,9 @@
   - heading "Shared Profits and Losses" [level=3]
   - paragraph: Surplus from billable work is divided based on patronage, which is defined by billable hours worked in a period of time. If times are busy and there is a lot of work, we all share the benefits based on our contribution.
   - paragraph: On the other hand, if billable work is in limited supply, it will be felt by all and provide incentive for all members to contribute to the cooperative.
+- contentinfo:
+  - paragraph:
+    - text: Contact us at
+    - link "consulting@computost.com":
+      - /url: mailto:consulting@computost.com
+  - paragraph: /Copyright © \d+ Computost Consulting, LLC/
