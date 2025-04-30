@@ -1,6 +1,6 @@
 import type { Route } from "./+types/coop";
 
-export default function Home(_: Route.ComponentProps) {
+export default function Coop(_: Route.ComponentProps) {
   return (
     <main>
       <h1>Co-op Info</h1>
