@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { createRoutesStub, useMatches, useParams } from "react-router";
 import { expect, it, vi } from "vitest";
 
@@ -30,7 +30,7 @@ const Stub = createRoutesStub([
 ]);
 
 it("renders static content", () => {
-  render(<Stub />);
+  const { container } = render(<Stub />);
 
-  expect(screen.getByText("Hello, World!")).toBeInTheDocument();
+  expect(container.innerHTML).toMatchInlineSnapshot(`"Hello, World!"`);
 });
