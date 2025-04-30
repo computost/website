@@ -5,6 +5,7 @@ pre-commit:
       exclude:
         - "*.json"
         - "*.sql"
+        - "*.svg"
         - "*.yaml"
         - "*.yml"
       stage_fixed: true
