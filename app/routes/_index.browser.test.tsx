@@ -11,48 +11,58 @@ it("renders static content", () => {
 
   expect(container).toMatchInlineSnapshot(`
     <div>
-      <nav
-        aria-label="Main"
-        data-orientation="horizontal"
-        dir="ltr"
+      <header
+        class="flex justify-center gap-10 bg-orange-100 dark:bg-orange-950"
       >
-        <div
-          style="position: relative;"
+        <a
+          data-discover="true"
+          href="/"
         >
-          <ul
-            data-orientation="horizontal"
-            dir="ltr"
+          Computost Consulting
+        </a>
+        <nav
+          aria-label="Main"
+          data-orientation="horizontal"
+          dir="ltr"
+        >
+          <div
+            style="position: relative;"
           >
-            <li>
-              <a
-                data-discover="true"
-                data-radix-collection-item=""
-                href="/"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                data-discover="true"
-                data-radix-collection-item=""
-                href="/coop"
-              >
-                Co-op Info
-              </a>
-            </li>
-            <li>
-              <a
-                data-discover="true"
-                data-radix-collection-item=""
-                href="/services"
-              >
-                Services
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+            <ul
+              data-orientation="horizontal"
+              dir="ltr"
+            >
+              <li>
+                <a
+                  data-discover="true"
+                  data-radix-collection-item=""
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  data-discover="true"
+                  data-radix-collection-item=""
+                  href="/coop"
+                >
+                  Co-op Info
+                </a>
+              </li>
+              <li>
+                <a
+                  data-discover="true"
+                  data-radix-collection-item=""
+                  href="/services"
+                >
+                  Services
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       <footer>
         <p>
           Contact us at

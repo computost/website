@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
 
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
 
+import { Banner } from "~/components/Banner";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -10,11 +11,14 @@ import {
 export default function Layout(): ReactNode {
   return (
     <>
-      <NavigationMenu>
-        <NavigationMenuItem to="/">Home</NavigationMenuItem>
-        <NavigationMenuItem to="/coop">Co-op Info</NavigationMenuItem>
-        <NavigationMenuItem to="/services">Services</NavigationMenuItem>
-      </NavigationMenu>
+      <Banner>
+        <Link to="/">Computost Consulting</Link>
+        <NavigationMenu>
+          <NavigationMenuItem to="/">Home</NavigationMenuItem>
+          <NavigationMenuItem to="/coop">Co-op Info</NavigationMenuItem>
+          <NavigationMenuItem to="/services">Services</NavigationMenuItem>
+        </NavigationMenu>
+      </Banner>
       <Outlet />
       <footer>
         <p>

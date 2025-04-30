@@ -1,14 +1,17 @@
-- navigation "Main":
-  - list:
-    - listitem:
-      - link "Home":
-        - /url: /
-    - listitem:
-      - link "Co-op Info":
-        - /url: /coop
-    - listitem:
-      - link "Services":
-        - /url: /services
+- banner:
+  - link "Computost Consulting":
+    - /url: /
+  - navigation "Main":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /
+      - listitem:
+        - link "Co-op Info":
+          - /url: /coop
+      - listitem:
+        - link "Services":
+          - /url: /services
 - main:
   - heading "Co-op Info" [level=1]
   - heading "Why a Co-op of Software Consultants?" [level=2]
