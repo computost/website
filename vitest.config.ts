@@ -33,7 +33,10 @@ export default defineWorkersProject(async () => {
           test: {
             environment: "jsdom",
             globals: true,
-            include: ["app/**/*.browser.test.{ts,tsx}"],
+            include: [
+              "app/**/*.browser.test.{ts,tsx}",
+              "app/components/**/*.test.{ts,tsx}",
+            ],
             restoreMocks: true,
             setupFiles: ["./tests/register-jest-dom.ts"],
           },
