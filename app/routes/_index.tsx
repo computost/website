@@ -12,6 +12,7 @@ export default function Layout(): ReactNode {
     <>
       <NavigationMenu>
         <NavigationMenuItem to="/">Home</NavigationMenuItem>
+        <NavigationMenuItem to="/coop">Co-op Info</NavigationMenuItem>
       </NavigationMenu>
       <Outlet />
     </>

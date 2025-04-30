@@ -50,6 +50,12 @@ it("renders static content", () => {
           <p>
             Computost is a cooperative governed by a working agreement tailored to maximize dividing business responsibilities and profits to its members. Our vision is to create an inclusive democratic workplace for software consultants.
           </p>
+          <a
+            data-discover="true"
+            href="/coop"
+          >
+            Read more about cooperatives
+          </a>
         </article>
         <article>
           <h2>

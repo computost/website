@@ -13,6 +13,8 @@
   - article:
     - heading "The Co-op Vision" [level=2]
     - paragraph: Computost is a cooperative governed by a working agreement tailored to maximize dividing business responsibilities and profits to its members. Our vision is to create an inclusive democratic workplace for software consultants.
+    - link "Read more about cooperatives":
+      - /url: /coop
   - article:
     - heading "Services" [level=2]
     - paragraph: Computost provides software consulting services at a competitive hourly rate. All members are highly skilled and experienced developers. Our experience is primarily with Microsoft products but our services are not limited to Microsoft products.

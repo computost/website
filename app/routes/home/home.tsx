@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import type { Route } from "./+types/home";
 
 export function meta(_: Route.MetaArgs) {
@@ -34,6 +36,7 @@ export default function Home(
           members. Our vision is to create an inclusive democratic workplace for
           software consultants.
         </p>
+        <Link to="/coop">Read more about cooperatives</Link>
       </article>
       <article>
         <h2>Services</h2>
