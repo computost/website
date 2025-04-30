@@ -1,0 +1,6 @@
+- navigation "Main":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+- text: Hello, World!

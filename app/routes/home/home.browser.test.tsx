@@ -32,5 +32,9 @@ const Stub = createRoutesStub([
 it("renders static content", () => {
   const { container } = render(<Stub />);
 
-  expect(container.innerHTML).toMatchInlineSnapshot(`"Hello, World!"`);
+  expect(container).toMatchInlineSnapshot(`
+    <div>
+      Hello, World!
+    </div>
+  `);
 });
