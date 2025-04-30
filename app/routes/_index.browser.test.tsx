@@ -41,6 +41,15 @@ it("renders static content", () => {
                 Co-op Info
               </a>
             </li>
+            <li>
+              <a
+                data-discover="true"
+                data-radix-collection-item=""
+                href="/services"
+              >
+                Services
+              </a>
+            </li>
           </ul>
         </div>
       </nav>

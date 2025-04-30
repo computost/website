@@ -9,5 +9,6 @@ export default [
   layout("routes/_index.tsx", [
     index("routes/home/home.tsx"),
     route("coop", "routes/coop/coop.tsx"),
+    route("services", "routes/services/services.tsx"),
   ]),
 ] satisfies RouteConfig;

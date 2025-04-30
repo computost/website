@@ -46,6 +46,7 @@ export default function Home(
           developers. Our experience is primarily with Microsoft products but
           our services are not limited to Microsoft products.
         </p>
+        <Link to="/services">Read more about our services</Link>
       </article>
       <article>
         <h2>Our Principals</h2>

@@ -64,6 +64,12 @@ it("renders static content", () => {
           <p>
             Computost provides software consulting services at a competitive hourly rate. All members are highly skilled and experienced developers. Our experience is primarily with Microsoft products but our services are not limited to Microsoft products.
           </p>
+          <a
+            data-discover="true"
+            href="/services"
+          >
+            Read more about our services
+          </a>
         </article>
         <article>
           <h2>

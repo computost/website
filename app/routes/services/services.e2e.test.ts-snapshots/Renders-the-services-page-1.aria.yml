@@ -1,0 +1,64 @@
+- navigation "Main":
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+    - listitem:
+      - link "Co-op Info":
+        - /url: /coop
+    - listitem:
+      - link "Services":
+        - /url: /services
+- main:
+  - heading "Services" [level=1]
+  - heading "Standard Consulting Services" [level=2]
+  - paragraph:
+    - text: Computost provides software consulting services at an hourly rate. For details on our hourly rates, please reach out to
+    - link "consulting@computost.com":
+      - /url: mailto:consulting@computost.com
+    - text: .
+  - heading "Mission Driven Consulting Services" [level=2]
+  - paragraph: Not all projects that provide value to the greater community have the capital to hire a team of developers to build and support their product. Computost provides a service called “Mission Driven” which gives projects, that we see as highly beneficial to the community, with low or non existent funding an opportunity to be created and provide value.
+  - paragraph: If Computost members collectively agree to take on a Mission Driven project, we will work with the client to make their product a reality. An hourly rate is decided upon. Hours spent are tracked. After the product is created, if the product generates revenue, payments over time based on profits are made to eventually pay off the effort spent to create the product.
+  - heading "Available Services" [level=2]
+  - list:
+    - listitem: New Application Development
+    - listitem: Enhancements to Existing Applications
+    - listitem: Code Reviews of Existing Applications
+    - listitem: Deployment and Infrastructure Configuration
+    - listitem: Real Time Data Integrations
+    - listitem: Workshops
+  - heading "Core Competencies" [level=2]
+  - heading "Languages" [level=3]
+  - list:
+    - listitem: C#
+    - listitem: SQL
+    - listitem: Javascript
+    - listitem: Typescript
+    - listitem: Powershell
+    - listitem: Ruby
+  - heading "Frameworks / Libraries" [level=3]
+  - list:
+    - listitem: Webpack
+    - listitem: React
+    - listitem: Vite
+    - listitem: Blazor
+    - listitem: MaterialUI
+    - listitem: FluentUI
+  - heading "Microsoft" [level=3]
+  - list:
+    - listitem: Power Platform
+    - listitem: Azure
+    - listitem: Business Central
+  - heading "GitHub" [level=3]
+  - list:
+    - listitem: Workflows
+    - listitem: Actions
+    - listitem: Repo Management
+  - heading "Google" [level=3]
+  - list:
+    - listitem: Firebase
+    - listitem: Google Cloud Storage
+  - heading "CMS Systems" [level=3]
+  - list:
+    - listitem: Umbraco

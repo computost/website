@@ -13,6 +13,7 @@ export default function Layout(): ReactNode {
       <NavigationMenu>
         <NavigationMenuItem to="/">Home</NavigationMenuItem>
         <NavigationMenuItem to="/coop">Co-op Info</NavigationMenuItem>
+        <NavigationMenuItem to="/services">Services</NavigationMenuItem>
       </NavigationMenu>
       <Outlet />
     </>
