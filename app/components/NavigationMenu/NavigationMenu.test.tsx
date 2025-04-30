@@ -5,7 +5,8 @@ import userEvent from "@testing-library/user-event";
 import { MemoryRouter, Route, Routes } from "react-router";
 import { describe, expect, it } from "vitest";
 
-import { NavigationMenu, NavigationMenuItem } from ".";
+import { NavigationMenu } from "./NavigationMenu";
+import { NavigationMenuItem } from "./NavigationMenuItem";
 
 it("renders its children as links", () => {
   render(
