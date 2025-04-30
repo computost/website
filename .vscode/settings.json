@@ -8,6 +8,7 @@
     "strings": "on"
   },
   "editor.tabSize": 2,
+  "files.eol": "\n",
   "eslint.rules.customizations": [
     {
       "rule": "*",
