@@ -6,5 +6,9 @@ export function BannerLink({
   children,
   to,
 }: PropsWithChildren<{ to: string }>): ReactNode {
-  return <Link to={to}>{children}</Link>;
+  return (
+    <Link className="text-2xl" to={to}>
+      {children}
+    </Link>
+  );
 }
