@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 
-import { Link, Outlet } from "react-router";
+import { Outlet } from "react-router";
 
-import { Banner } from "~/components/Banner";
+import { Banner, BannerLink } from "~/components/Banner";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -12,7 +12,7 @@ export default function Layout(): ReactNode {
   return (
     <>
       <Banner>
-        <Link to="/">Computost Consulting</Link>
+        <BannerLink to="/">Computost Consulting</BannerLink>
         <NavigationMenu>
           <NavigationMenuItem to="/">Home</NavigationMenuItem>
           <NavigationMenuItem to="/coop">Co-op Info</NavigationMenuItem>
