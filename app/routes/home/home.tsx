@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 
+import { Card, CardTitle } from "~/components/Card";
+
 import type { Route } from "./+types/home";
 
 // export async function action({ context, request }: Route.ActionArgs) {
@@ -14,8 +16,8 @@ export default function Home(
 ) {
   return (
     <main>
-      <article>
-        <h2>About Us</h2>
+      <Card>
+        <CardTitle>About Us</CardTitle>
         <p>
           We are a small team of software engineering consultants who specialize
           in Power Platform and Azure technologies. Our team members have an
@@ -23,9 +25,9 @@ export default function Home(
           Microsoft technologies. In our careers, we have provided consulting to
           help build large enterprise projects.
         </p>
-      </article>
-      <article>
-        <h2>The Co-op Vision</h2>
+      </Card>
+      <Card>
+        <CardTitle>The Co-op Vision</CardTitle>
         <p>
           Computost is a cooperative governed by a working agreement tailored to
           maximize dividing business responsibilities and profits to its
@@ -33,9 +35,9 @@ export default function Home(
           software consultants.
         </p>
         <Link to="/coop">Read more about cooperatives</Link>
-      </article>
-      <article>
-        <h2>Services</h2>
+      </Card>
+      <Card>
+        <CardTitle>Services</CardTitle>
         <p>
           Computost provides software consulting services at a competitive
           hourly rate. All members are highly skilled and experienced
@@ -43,9 +45,9 @@ export default function Home(
           our services are not limited to Microsoft products.
         </p>
         <Link to="/services">Read more about our services</Link>
-      </article>
-      <article>
-        <h2>Our Principals</h2>
+      </Card>
+      <Card>
+        <CardTitle>Our Principals</CardTitle>
         <section>
           <h3>Quality</h3>
           <p>
@@ -75,9 +77,9 @@ export default function Home(
             need after each delivery.
           </p>
         </section>
-      </article>
-      <article>
-        <h2>Technologies</h2>
+      </Card>
+      <Card>
+        <CardTitle>Technologies</CardTitle>
         <section>
           <h3>Power Platform</h3>
           <ul>
@@ -103,9 +105,9 @@ export default function Home(
             <li>GitLab</li>
           </ul>
         </section>
-      </article>
-      <article>
-        <h2>Projects</h2>
+      </Card>
+      <Card>
+        <CardTitle>Projects</CardTitle>
         <p>
           While we work with customers, we often innovate tools that can provide
           value for the larger software development community. Below are some of
@@ -116,7 +118,7 @@ export default function Home(
             <a href="https://github.com/computost/pac-fetch">pac-fetch</a>
           </li>
         </ul>
-      </article>
+      </Card>
     </main>
   );
 }
