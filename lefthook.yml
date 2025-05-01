@@ -3,6 +3,7 @@ pre-commit:
     lint:
       run: npm run lint -- --fix {staged_files}
       exclude:
+        - "*.css"
         - "*.json"
         - "*.sql"
         - "*.svg"
