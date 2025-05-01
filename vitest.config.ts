@@ -3,6 +3,7 @@ import {
   readD1Migrations,
 } from "@cloudflare/vitest-pool-workers/config";
 import { join } from "path";
+import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineWorkersProject(async () => {
@@ -29,7 +30,7 @@ export default defineWorkersProject(async () => {
       restoreMocks: true,
       workspace: [
         {
-          plugins: [tsconfigPaths()],
+          plugins: [tsconfigPaths(), svgr()],
           test: {
             environment: "jsdom",
             globals: true,
