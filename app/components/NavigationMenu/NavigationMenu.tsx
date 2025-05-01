@@ -7,11 +7,14 @@ import type { NavigationMenuItemProps } from "./NavigationMenuItem";
 export function NavigationMenu({ children }: NavigationMenuProps): ReactNode {
   return (
     <RadixNavigationMenu.Root>
-      <RadixNavigationMenu.List>{children}</RadixNavigationMenu.List>
+      <RadixNavigationMenu.List className="flex gap-2">
+        {children}
+      </RadixNavigationMenu.List>
     </RadixNavigationMenu.Root>
   );
 }
-type NavigationMenuProps = {
+
+export type NavigationMenuProps = {
   children?:
     | ReactElement<NavigationMenuItemProps>
     | ReactElement<NavigationMenuItemProps>[];
