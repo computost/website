@@ -1,3 +1,3 @@
-import ComputostLogo from "../../../public/computost.svg?react";
+import ComputostLogo from "./computost.svg?react";
 
 export { ComputostLogo };
