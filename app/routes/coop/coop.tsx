@@ -1,10 +1,12 @@
+import { Heading } from "~/components/Heading";
+
 import type { Route } from "./+types/coop";
 
 export default function Coop(_: Route.ComponentProps) {
   return (
     <main>
-      <h1>Co-op Info</h1>
-      <h2>Why a Co-op of Software Consultants?</h2>
+      <Heading level={1}>Co-op Info</Heading>
+      <Heading level={2}>Why a Co-op of Software Consultants?</Heading>
       <p>
         The founding members of Computost have spent the majority of their
         professional careers in the software consulting industry. Consulting can
@@ -21,24 +23,24 @@ export default function Coop(_: Route.ComponentProps) {
         do positive, meaningful, work and are compensated fairly based on their
         patronage.
       </p>
-      <h2>Our Co-op Principles</h2>
+      <Heading level={2}>Our Co-op Principles</Heading>
       <p>
         There are an infinite number of ways to run a cooperative. We have
         chosen the following principles to run Computost by:
       </p>
-      <h3>One Member One Vote</h3>
+      <Heading level={3}>One Member One Vote</Heading>
       <p>Every member has the same voting weight.</p>
-      <h3>Member Managed</h3>
+      <Heading level={3}>Member Managed</Heading>
       <p>
         Every member is required to vote on each decision or proposal. Any
         member can raise a proposal to vote on.
       </p>
-      <h3>No Hierarchy</h3>
+      <Heading level={3}>No Hierarchy</Heading>
       <p>
         There are no managers. All members have the same level of authority and
         autonomy.
       </p>
-      <h3>Shared Profits and Losses</h3>
+      <Heading level={3}>Shared Profits and Losses</Heading>
       <p>
         Surplus from billable work is divided based on patronage, which is
         defined by billable hours worked in a period of time. If times are busy

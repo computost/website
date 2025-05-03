@@ -1,16 +1,18 @@
+import { Heading } from "~/components/Heading";
+
 import type { Route } from "./+types/services";
 
 export default function Services(_: Route.ComponentProps) {
   return (
     <main>
-      <h1>Services</h1>
-      <h2>Standard Consulting Services</h2>
+      <Heading level={1}>Services</Heading>
+      <Heading level={2}>Standard Consulting Services</Heading>
       <p>
         Computost provides software consulting services at an hourly rate. For
         details on our hourly rates, please reach out to{" "}
         <a href="mailto:consulting@computost.com">consulting@computost.com</a>.
       </p>
-      <h2>Mission Driven Consulting Services</h2>
+      <Heading level={2}>Mission Driven Consulting Services</Heading>
       <p>
         Not all projects that provide value to the greater community have the
         capital to hire a team of developers to build and support their product.
@@ -27,7 +29,7 @@ export default function Services(_: Route.ComponentProps) {
         based on profits are made to eventually pay off the effort spent to
         create the product.
       </p>
-      <h2>Available Services</h2>
+      <Heading level={2}>Available Services</Heading>
       <ul>
         <li>New Application Development</li>
         <li>Enhancements to Existing Applications</li>
@@ -36,8 +38,8 @@ export default function Services(_: Route.ComponentProps) {
         <li>Real Time Data Integrations</li>
         <li>Workshops</li>
       </ul>
-      <h2>Core Competencies</h2>
-      <h3>Languages</h3>
+      <Heading level={2}>Core Competencies</Heading>
+      <Heading level={3}>Languages</Heading>
       <ul>
         <li>C#</li>
         <li>SQL</li>
@@ -46,7 +48,7 @@ export default function Services(_: Route.ComponentProps) {
         <li>Powershell</li>
         <li>Ruby</li>
       </ul>
-      <h3>Frameworks / Libraries</h3>
+      <Heading level={3}>Frameworks / Libraries</Heading>
       <ul>
         <li>Webpack</li>
         <li>React</li>
@@ -55,24 +57,24 @@ export default function Services(_: Route.ComponentProps) {
         <li>MaterialUI</li>
         <li>FluentUI</li>
       </ul>
-      <h3>Microsoft</h3>
+      <Heading level={3}>Microsoft</Heading>
       <ul>
         <li>Power Platform</li>
         <li>Azure</li>
         <li>Business Central</li>
       </ul>
-      <h3>GitHub</h3>
+      <Heading level={3}>GitHub</Heading>
       <ul>
         <li>Workflows</li>
         <li>Actions</li>
         <li>Repo Management</li>
       </ul>
-      <h3>Google</h3>
+      <Heading level={3}>Google</Heading>
       <ul>
         <li>Firebase</li>
         <li>Google Cloud Storage</li>
       </ul>
-      <h3>CMS Systems</h3>
+      <Heading level={3}>CMS Systems</Heading>
       <ul>
         <li>Umbraco</li>
       </ul>

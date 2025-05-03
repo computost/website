@@ -1,4 +1,5 @@
 import { Card, CardTitle } from "~/components/Card";
+import { Heading } from "~/components/Heading";
 import { InAppLink } from "~/components/InAppLink";
 
 import type { Route } from "./+types/home";
@@ -52,7 +53,7 @@ export default function Home(
           <Card className="max-w-[27rem]">
             <CardTitle>Our Principals</CardTitle>
             <section>
-              <h3>Quality</h3>
+              <Heading level={3}>Quality</Heading>
               <p>
                 If anything is worth doing, it&rsquo;s worth doing right. No job
                 is finished until it meets our standards of documentation,
@@ -60,21 +61,21 @@ export default function Home(
               </p>
             </section>
             <section>
-              <h3>Communication</h3>
+              <Heading level={3}>Communication</Heading>
               <p>
                 We code in an open kitchen. Everything we make, our customers
                 have access to it at all times.
               </p>
             </section>
             <section>
-              <h3>Maintainability</h3>
+              <Heading level={3}>Maintainability</Heading>
               <p>
                 As solution architects, we build everything with support in
                 mind.
               </p>
             </section>
             <section>
-              <h3>Flexibility</h3>
+              <Heading level={3}>Flexibility</Heading>
               <p>
                 Your technical solutions should grow with your business. We
                 deliver value in frequent, small intervals, continuing to
@@ -85,7 +86,7 @@ export default function Home(
           <Card className="w-[14rem]">
             <CardTitle>Technologies</CardTitle>
             <section>
-              <h3>Power Platform</h3>
+              <Heading level={3}>Power Platform</Heading>
               <ul>
                 <li>Power Apps</li>
                 <li>Power Automate</li>
@@ -93,7 +94,7 @@ export default function Home(
               </ul>
             </section>
             <section>
-              <h3>Azure</h3>
+              <Heading level={3}>Azure</Heading>
               <ul>
                 <li>Data Factory</li>
                 <li>Function Apps</li>
@@ -102,7 +103,7 @@ export default function Home(
               </ul>
             </section>
             <section>
-              <h3>DevOps</h3>
+              <Heading level={3}>DevOps</Heading>
               <ul>
                 <li>Azure DevOps</li>
                 <li>GitHub</li>

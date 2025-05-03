@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 
 import "./app.css";
+import { Heading } from "./components/Heading";
 
 export const links: Route.LinksFunction = () => [
   { href: "https://fonts.googleapis.com", rel: "preconnect" },
@@ -69,7 +70,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   return (
     <main className="container mx-auto p-4 pt-16">
-      <h1>{message}</h1>
+      <Heading level={1}>{message}</Heading>
       <p>{details}</p>
       {stack && (
         <pre className="w-full overflow-x-auto p-4">
