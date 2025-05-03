@@ -1,6 +1,5 @@
-import { Link } from "react-router";
-
 import { Card, CardTitle } from "~/components/Card";
+import { InAppLink } from "~/components/InAppLink";
 
 import type { Route } from "./+types/home";
 
@@ -35,7 +34,7 @@ export default function Home(
             members. Our vision is to create an inclusive democratic workplace
             for software consultants.
           </p>
-          <Link to="/coop">Read more about cooperatives</Link>
+          <InAppLink to="/coop">Read more about cooperatives</InAppLink>
         </Card>
         <Card className="max-w-[35rem]">
           <CardTitle>Services</CardTitle>
@@ -45,7 +44,7 @@ export default function Home(
             developers. Our experience is primarily with Microsoft products but
             our services are not limited to Microsoft products.
           </p>
-          <Link to="/services">Read more about our services</Link>
+          <InAppLink to="/services">Read more about our services</InAppLink>
         </Card>
       </div>
       <div className="flex flex-col items-center gap-8 min-[76rem]:flex-row min-[76rem]:items-start">
