@@ -15,8 +15,8 @@ export default function Home(
   _ /* { actionData, loaderData } */ : Route.ComponentProps,
 ) {
   return (
-    <main>
-      <Card>
+    <main className="flex flex-col items-center gap-8 p-8">
+      <Card className="max-w-6xl">
         <CardTitle>About Us</CardTitle>
         <p>
           We are a small team of software engineering consultants who specialize
@@ -26,99 +26,106 @@ export default function Home(
           help build large enterprise projects.
         </p>
       </Card>
-      <Card>
-        <CardTitle>The Co-op Vision</CardTitle>
-        <p>
-          Computost is a cooperative governed by a working agreement tailored to
-          maximize dividing business responsibilities and profits to its
-          members. Our vision is to create an inclusive democratic workplace for
-          software consultants.
-        </p>
-        <Link to="/coop">Read more about cooperatives</Link>
-      </Card>
-      <Card>
-        <CardTitle>Services</CardTitle>
-        <p>
-          Computost provides software consulting services at a competitive
-          hourly rate. All members are highly skilled and experienced
-          developers. Our experience is primarily with Microsoft products but
-          our services are not limited to Microsoft products.
-        </p>
-        <Link to="/services">Read more about our services</Link>
-      </Card>
-      <Card>
-        <CardTitle>Our Principals</CardTitle>
-        <section>
-          <h3>Quality</h3>
+      <div className="flex flex-col items-center gap-8 min-[76rem]:flex-row min-[76rem]:items-start">
+        <Card className="max-w-[35rem]">
+          <CardTitle>The Co-op Vision</CardTitle>
           <p>
-            If anything is worth doing, it&rsquo;s worth doing right. No job is
-            finished until it meets our standards of documentation, styling,
-            testing, and deployability.
+            Computost is a cooperative governed by a working agreement tailored
+            to maximize dividing business responsibilities and profits to its
+            members. Our vision is to create an inclusive democratic workplace
+            for software consultants.
           </p>
-        </section>
-        <section>
-          <h3>Communication</h3>
+          <Link to="/coop">Read more about cooperatives</Link>
+        </Card>
+        <Card className="max-w-[35rem]">
+          <CardTitle>Services</CardTitle>
           <p>
-            We code in an open kitchen. Everything we make, our customers have
-            access to it at all times.
+            Computost provides software consulting services at a competitive
+            hourly rate. All members are highly skilled and experienced
+            developers. Our experience is primarily with Microsoft products but
+            our services are not limited to Microsoft products.
           </p>
-        </section>
-        <section>
-          <h3>Maintainability</h3>
+          <Link to="/services">Read more about our services</Link>
+        </Card>
+      </div>
+      <div className="flex flex-col items-center gap-8 min-[76rem]:flex-row min-[76rem]:items-start">
+        <div className="flex flex-col items-center gap-8 min-[47rem]:flex-row min-[47rem]:items-start">
+          <Card className="max-w-[27rem]">
+            <CardTitle>Our Principals</CardTitle>
+            <section>
+              <h3>Quality</h3>
+              <p>
+                If anything is worth doing, it&rsquo;s worth doing right. No job
+                is finished until it meets our standards of documentation,
+                styling, testing, and deployability.
+              </p>
+            </section>
+            <section>
+              <h3>Communication</h3>
+              <p>
+                We code in an open kitchen. Everything we make, our customers
+                have access to it at all times.
+              </p>
+            </section>
+            <section>
+              <h3>Maintainability</h3>
+              <p>
+                As solution architects, we build everything with support in
+                mind.
+              </p>
+            </section>
+            <section>
+              <h3>Flexibility</h3>
+              <p>
+                Your technical solutions should grow with your business. We
+                deliver value in frequent, small intervals, continuing to
+                reassess what you need after each delivery.
+              </p>
+            </section>
+          </Card>
+          <Card className="w-[14rem]">
+            <CardTitle>Technologies</CardTitle>
+            <section>
+              <h3>Power Platform</h3>
+              <ul>
+                <li>Power Apps</li>
+                <li>Power Automate</li>
+                <li>Power Pages</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Azure</h3>
+              <ul>
+                <li>Data Factory</li>
+                <li>Function Apps</li>
+                <li>Service Bus</li>
+                <li>SQL</li>
+              </ul>
+            </section>
+            <section>
+              <h3>DevOps</h3>
+              <ul>
+                <li>Azure DevOps</li>
+                <li>GitHub</li>
+                <li>GitLab</li>
+              </ul>
+            </section>
+          </Card>
+        </div>
+        <Card className="max-w-[27rem]">
+          <CardTitle>Projects</CardTitle>
           <p>
-            As solution architects, we build everything with support in mind.
+            While we work with customers, we often innovate tools that can
+            provide value for the larger software development community. Below
+            are some of the tools we have created:
           </p>
-        </section>
-        <section>
-          <h3>Flexibility</h3>
-          <p>
-            Your technical solutions should grow with your business. We deliver
-            value in frequent, small intervals, continuing to reassess what you
-            need after each delivery.
-          </p>
-        </section>
-      </Card>
-      <Card>
-        <CardTitle>Technologies</CardTitle>
-        <section>
-          <h3>Power Platform</h3>
           <ul>
-            <li>Power Apps</li>
-            <li>Power Automate</li>
-            <li>Power Pages</li>
+            <li>
+              <a href="https://github.com/computost/pac-fetch">pac-fetch</a>
+            </li>
           </ul>
-        </section>
-        <section>
-          <h3>Azure</h3>
-          <ul>
-            <li>Data Factory</li>
-            <li>Function Apps</li>
-            <li>Service Bus</li>
-            <li>SQL</li>
-          </ul>
-        </section>
-        <section>
-          <h3>DevOps</h3>
-          <ul>
-            <li>Azure DevOps</li>
-            <li>GitHub</li>
-            <li>GitLab</li>
-          </ul>
-        </section>
-      </Card>
-      <Card>
-        <CardTitle>Projects</CardTitle>
-        <p>
-          While we work with customers, we often innovate tools that can provide
-          value for the larger software development community. Below are some of
-          the tools we have created:
-        </p>
-        <ul>
-          <li>
-            <a href="https://github.com/computost/pac-fetch">pac-fetch</a>
-          </li>
-        </ul>
-      </Card>
+        </Card>
+      </div>
     </main>
   );
 }
