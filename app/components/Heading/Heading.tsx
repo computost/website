@@ -10,7 +10,11 @@ export function Heading({
     case 2:
       return <h2>{children}</h2>;
     case 3:
-      return <h3>{children}</h3>;
+      return (
+        <h3 className="text-2xl font-bold text-yellow-900 dark:text-amber-200">
+          {children}
+        </h3>
+      );
     default:
       assertUnreachable(level);
   }
