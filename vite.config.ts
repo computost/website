@@ -15,6 +15,7 @@ export default defineConfig(({ isSsrBuild }) => ({
         }
       : undefined,
   },
+  define: { "import.meta.vitest": "undefined" },
   plugins: [
     cloudflareDevProxy({
       getLoadContext,

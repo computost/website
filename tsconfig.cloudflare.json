@@ -22,7 +22,8 @@
       "@cloudflare/workers-types",
       "@cloudflare/workers-types/experimental",
       "node",
-      "vite/client"
+      "vite/client",
+      "vitest/importMeta"
     ],
     "target": "ES2022",
     "module": "ES2022",
