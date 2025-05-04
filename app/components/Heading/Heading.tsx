@@ -9,7 +9,16 @@ export function Heading({
 }: HeadingProps): ReactNode {
   switch (level) {
     case 1:
-      return <h1 className={className}>{children}</h1>;
+      return (
+        <h1
+          className={mergeClassNames(
+            "mb-2 border-b p-2 text-center text-4xl text-orange-950 dark:text-orange-50",
+            className,
+          )}
+        >
+          {children}
+        </h1>
+      );
     case 2:
       return (
         <h2
