@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Link, Outlet } from "react-router";
 
 import { ComputostLogo } from "~/components/ComputostLogo";
+import { ExternalLink } from "~/components/ExternalLink";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -31,7 +32,9 @@ export default function Layout(): ReactNode {
       <footer className="flex flex-col items-center gap-2 p-2">
         <p>
           Contact us at{" "}
-          <a href="mailto:consulting@computost.com">consulting@computost.com</a>
+          <ExternalLink href="mailto:consulting@computost.com">
+            consulting@computost.com
+          </ExternalLink>
         </p>
         <p>
           Copyright &copy; {new Date().getFullYear()} Computost Consulting, LLC
