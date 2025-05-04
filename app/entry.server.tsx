@@ -1,4 +1,8 @@
-import type { AppLoadContext, EntryContext } from "react-router";
+import type {
+  AppLoadContext,
+  EntryContext,
+  HandleErrorFunction,
+} from "react-router";
 
 import { isbot } from "isbot";
 import { renderToReadableStream } from "react-dom/server";
@@ -11,6 +15,10 @@ export default async function handleRequest(
   routerContext: EntryContext,
   _loadContext: AppLoadContext,
 ) {
+  if (shouldIgnoreRequest(request)) {
+    return new Response();
+  }
+
   let shellRendered = false;
   const userAgent = request.headers.get("user-agent");
 
@@ -41,4 +49,23 @@ export default async function handleRequest(
     headers: responseHeaders,
     status: responseStatusCode,
   });
+}
+
+export const handleError: HandleErrorFunction = (error, { request }) => {
+  if (!request.signal.aborted) {
+    if (!shouldIgnoreRequest(request)) {
+      console.error(error);
+    }
+  }
+};
+
+/**
+ * This handles a known issue in which the React Dev Tools will attempt to
+ * request an asset that Vite does not know how to serve. It only occurs when
+ * running in dev mode.
+ *
+ * https://github.com/remix-run/remix/issues/9311
+ */
+function shouldIgnoreRequest(request: Request): boolean {
+  return import.meta.env.DEV && request.url.endsWith("/installHook.js.map");
 }
