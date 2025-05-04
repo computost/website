@@ -3,9 +3,34 @@ import type { PropsWithChildren, ReactNode } from "react";
 import { DropdownMenu, NavigationMenu as RadixNavigationMenu } from "radix-ui";
 import { Link, useLocation } from "react-router";
 
+import { assertUnreachable } from "~/utils/assertUnreachable";
 import { mergeClassNames } from "~/utils/mergeClassNames";
 
+import { useNavigationMenuDisplayType } from "./useNavigationMenuDisplayType";
+
 export function NavigationMenuItem({
+  children,
+  to,
+}: NavigationMenuItemProps): ReactNode {
+  const displayType = useNavigationMenuDisplayType();
+
+  switch (displayType) {
+    case "dropdown":
+      return (
+        <DropdownNavigationMenuItem to={to}>
+          {children}
+        </DropdownNavigationMenuItem>
+      );
+    case "inline":
+      return (
+        <InlineNavigationMenuItem to={to}>{children}</InlineNavigationMenuItem>
+      );
+    default:
+      assertUnreachable(displayType);
+  }
+}
+
+function DropdownNavigationMenuItem({
   children,
   to,
 }: NavigationMenuItemProps): ReactNode {
@@ -17,7 +42,7 @@ export function NavigationMenuItem({
         <RadixNavigationMenu.Link asChild>
           <Link
             className={mergeClassNames(
-              "block bg-radial pt-1.5 pr-2 pb-1.5 pl-2 uppercase transition",
+              "block bg-gradient-to-b pt-1.5 pr-2 pb-1.5 pl-2 uppercase transition",
               pathname === to
                 ? "from-orange-300 dark:from-orange-800"
                 : "hover:from-orange-200 focus:from-orange-200 dark:hover:from-orange-900 dark:focus:from-orange-900",
@@ -29,6 +54,31 @@ export function NavigationMenuItem({
         </RadixNavigationMenu.Link>
       </RadixNavigationMenu.Item>
     </DropdownMenu.DropdownMenuItem>
+  );
+}
+
+function InlineNavigationMenuItem({
+  children,
+  to,
+}: NavigationMenuItemProps): ReactNode {
+  const { pathname } = useLocation();
+
+  return (
+    <RadixNavigationMenu.Item>
+      <RadixNavigationMenu.Link asChild>
+        <Link
+          className={mergeClassNames(
+            "block bg-radial pt-1.5 pr-2 pb-1.5 pl-2 uppercase transition",
+            pathname === to
+              ? "from-orange-300 dark:from-orange-800"
+              : "hover:from-orange-200 focus:from-orange-200 dark:hover:from-orange-900 dark:focus:from-orange-900",
+          )}
+          to={to}
+        >
+          {children}
+        </Link>
+      </RadixNavigationMenu.Link>
+    </RadixNavigationMenu.Item>
   );
 }
 
