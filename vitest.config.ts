@@ -39,7 +39,10 @@ export default defineWorkersProject(async () => {
               "app/components/**/*.test.{ts,tsx}",
             ],
             restoreMocks: true,
-            setupFiles: ["./tests/register-jest-dom.ts"],
+            setupFiles: [
+              "./tests/register-jest-dom.ts",
+              "./tests/shim-match-media.ts",
+            ],
           },
         },
         {
