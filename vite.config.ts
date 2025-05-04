@@ -36,6 +36,7 @@ export default defineConfig(({ isSsrBuild }) => ({
         "react-dom",
         "react-dom/server",
         "react-router",
+        "usehooks-ts",
       ],
     },
     resolve: {
