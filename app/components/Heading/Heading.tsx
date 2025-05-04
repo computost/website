@@ -2,6 +2,8 @@ import type { PropsWithChildren, ReactNode } from "react";
 
 import { mergeClassNames } from "~/utils/mergeClassNames";
 
+import { assertUnreachable } from "../../utils/assertUnreachable";
+
 export function Heading({
   children,
   className,
@@ -50,13 +52,3 @@ type HeadingProps = PropsWithChildren<{
   className?: string;
   level: 1 | 2 | 3;
 }>;
-
-function assertUnreachable(value: never): never {
-  throw new Error(
-    `Unreachable code was reached. Unexpected value: ${
-      // `never` cannot be passed into a template expression
-      // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      value
-    }`,
-  );
-}
