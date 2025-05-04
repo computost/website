@@ -1,3 +1,4 @@
+import { ExternalLink } from "~/components/ExternalLink";
 import { Heading } from "~/components/Heading";
 
 import type { Route } from "./+types/services";
@@ -10,7 +11,10 @@ export default function Services(_: Route.ComponentProps) {
       <p>
         Computost provides software consulting services at an hourly rate. For
         details on our hourly rates, please reach out to{" "}
-        <a href="mailto:consulting@computost.com">consulting@computost.com</a>.
+        <ExternalLink href="mailto:consulting@computost.com">
+          consulting@computost.com
+        </ExternalLink>
+        .
       </p>
       <Heading level={2}>Mission Driven Consulting Services</Heading>
       <p>

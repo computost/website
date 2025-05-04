@@ -1,4 +1,5 @@
 import { Card, CardTitle } from "~/components/Card";
+import { ExternalLink } from "~/components/ExternalLink";
 import { Heading } from "~/components/Heading";
 import { InAppLink } from "~/components/InAppLink";
 
@@ -121,7 +122,9 @@ export default function Home(
           </p>
           <ul>
             <li>
-              <a href="https://github.com/computost/pac-fetch">pac-fetch</a>
+              <ExternalLink href="https://github.com/computost/pac-fetch">
+                pac-fetch
+              </ExternalLink>
             </li>
           </ul>
         </Card>
