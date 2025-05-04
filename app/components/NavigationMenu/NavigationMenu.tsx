@@ -37,7 +37,7 @@ function DropdownNavigationMenu({ children }: NavigationMenuProps): ReactNode {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger
-        aria-label="Open navigation"
+        aria-label="Navigation"
         className="ml-auto cursor-pointer"
       >
         <HamburgerMenuIcon className="size-6" />
