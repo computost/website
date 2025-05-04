@@ -1,1 +1,0 @@
-export { BannerLink } from "./BannerLink";

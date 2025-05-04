@@ -1,8 +1,7 @@
 import type { ReactNode } from "react";
 
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
 
-import { BannerLink } from "~/components/Banner";
 import { ComputostLogo } from "~/components/ComputostLogo";
 import {
   NavigationMenu,
@@ -18,7 +17,9 @@ export default function Layout(): ReactNode {
             className="h-8 fill-stone-900 dark:fill-stone-100"
             title="Computost Consulting logo"
           />
-          <BannerLink to="/">Computost Consulting</BannerLink>
+          <Link className="text-2xl" to="/">
+            Computost Consulting
+          </Link>
           <NavigationMenu>
             <NavigationMenuItem to="/">Home</NavigationMenuItem>
             <NavigationMenuItem to="/coop">Co-op Info</NavigationMenuItem>
