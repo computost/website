@@ -44,7 +44,8 @@ export default defineWorkersProject(async () => {
         },
         {
           test: {
-            include: ["app/utils/**/*.{ts,tsx}"],
+            include: [],
+            includeSource: ["app/utils/**/*.{ts,tsx}"],
           },
         },
         {
