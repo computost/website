@@ -28,7 +28,7 @@ export default function Layout(): ReactNode {
         </div>
       </header>
       <Outlet />
-      <footer>
+      <footer className="flex flex-col items-center gap-2 p-2">
         <p>
           Contact us at{" "}
           <a href="mailto:consulting@computost.com">consulting@computost.com</a>
