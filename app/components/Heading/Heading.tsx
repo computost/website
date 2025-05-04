@@ -11,7 +11,16 @@ export function Heading({
     case 1:
       return <h1 className={className}>{children}</h1>;
     case 2:
-      return <h2 className={className}>{children}</h2>;
+      return (
+        <h2
+          className={mergeClassNames(
+            "text-3xl text-emerald-900 dark:text-emerald-100",
+            className,
+          )}
+        >
+          {children}
+        </h2>
+      );
     case 3:
       return (
         <h3
