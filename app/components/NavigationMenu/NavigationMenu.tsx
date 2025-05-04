@@ -43,13 +43,8 @@ function DropdownNavigationMenu({ children }: NavigationMenuProps): ReactNode {
         <HamburgerMenuIcon className="size-6" />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content asChild>
-          <RadixNavigationMenu.Root
-            className="rounded-md border border-stone-950 bg-stone-50 dark:border-stone-50 dark:bg-stone-950"
-            orientation="vertical"
-          >
-            <RadixNavigationMenu.List>{children}</RadixNavigationMenu.List>
-          </RadixNavigationMenu.Root>
+        <DropdownMenu.Content className="rounded-md border border-stone-950 bg-stone-50 dark:border-stone-50 dark:bg-stone-950">
+          {children}
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>
