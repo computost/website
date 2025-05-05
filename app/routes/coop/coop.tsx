@@ -4,7 +4,7 @@ import type { Route } from "./+types/coop";
 
 export default function Coop(_: Route.ComponentProps) {
   return (
-    <main>
+    <main className="flex flex-col gap-4 p-8">
       <Heading level={1}>Co-op Info</Heading>
       <Heading level={2}>Why a Co-op of Software Consultants?</Heading>
       <p>
