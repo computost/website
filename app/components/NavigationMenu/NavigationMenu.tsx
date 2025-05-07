@@ -43,7 +43,7 @@ function DropdownNavigationMenu({ children }: NavigationMenuProps): ReactNode {
         <HamburgerMenuIcon className="size-6" />
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="rounded-md border border-stone-950 bg-stone-50 dark:border-stone-50 dark:bg-stone-950">
+        <DropdownMenu.Content className="rounded-sm border border-stone-950 bg-stone-50 dark:border-[#434343] dark:bg-neutral-800">
           {children}
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
