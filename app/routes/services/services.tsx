@@ -116,7 +116,7 @@ export default function Services(_: Route.ComponentProps) {
 
 function BigListItem({ children }: PropsWithChildren): ReactNode {
   return (
-    <li className="rounded-lg bg-emerald-300 pt-2 pb-2 text-center text-xl dark:bg-[#1e1e1e] dark:text-orange-200">
+    <li className="rounded-lg bg-[#dfdfdf] pt-2 pb-2 text-center text-xl text-orange-800 dark:bg-[#1e1e1e] dark:text-orange-200">
       {children}
     </li>
   );

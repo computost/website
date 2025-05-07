@@ -42,8 +42,8 @@ function DropdownNavigationMenuItem({
         className={mergeClassNames(
           "block pt-3 pr-6 pb-3 pl-6 uppercase transition-colors duration-300",
           pathname === to
-            ? "dark:text-[#f0dac2]"
-            : "dark:text-orange-200 dark:hover:bg-[#3f3f3f] dark:focus:bg-[#3f3f3f]",
+            ? "text-orange-950 dark:text-[#f0dac2]"
+            : "text-orange-800 hover:bg-[#b4b4b4] focus:bg-[#b4b4b4] dark:text-orange-200 dark:hover:bg-[#3f3f3f] dark:focus:bg-[#3f3f3f]",
         )}
         to={to}
       >
@@ -66,8 +66,8 @@ function InlineNavigationMenuItem({
           className={mergeClassNames(
             "block pt-1.5 pr-2 pb-1.5 pl-2 uppercase transition-colors duration-300",
             pathname === to
-              ? "dark:text-[#f0dac2]"
-              : "dark:text-orange-200 dark:hover:text-[#fbd8ae] dark:focus:text-[#fbd8ae]",
+              ? "text-orange-950 dark:text-[#f0dac2]"
+              : "text-orange-800 hover:text-orange-900 focus:text-orange-900 dark:text-orange-200 dark:hover:text-[#fbd8ae] dark:focus:text-[#fbd8ae]",
           )}
           to={to}
         >

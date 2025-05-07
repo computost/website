@@ -7,7 +7,7 @@ export function InAppLink({
   to,
 }: PropsWithChildren<{ to: string }>): ReactNode {
   return (
-    <Link className="text-emerald-800 underline dark:text-orange-200" to={to}>
+    <Link className="text-orange-800 underline dark:text-orange-200" to={to}>
       {children}
     </Link>
   );

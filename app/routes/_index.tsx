@@ -12,7 +12,7 @@ import {
 export default function Layout(): ReactNode {
   return (
     <>
-      <header className="flex justify-center pr-4 pl-4 shadow-md shadow-neutral-400 dark:shadow-neutral-900">
+      <header className="flex justify-center bg-neutral-100 pr-4 pl-4 shadow-md shadow-neutral-300 dark:bg-transparent dark:shadow-neutral-900">
         <div className="flex min-h-16 w-full max-w-7xl items-center gap-4">
           <ComputostLogo
             className="h-8 fill-stone-900 dark:fill-stone-100"

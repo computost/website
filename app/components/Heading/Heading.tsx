@@ -14,7 +14,7 @@ export function Heading({
       return (
         <h1
           className={mergeClassNames(
-            "mb-2 border-b pb-2 text-center text-4xl text-orange-950 dark:border-b-neutral-700 dark:text-orange-50",
+            "mb-2 border-b pb-2 text-center text-4xl text-orange-900 dark:border-b-neutral-700 dark:text-orange-50",
             className,
           )}
         >
@@ -25,7 +25,7 @@ export function Heading({
       return (
         <h2
           className={mergeClassNames(
-            "text-3xl font-bold text-emerald-900 dark:text-orange-200",
+            "text-3xl font-bold text-orange-800 dark:text-orange-200",
             className,
           )}
         >
@@ -36,7 +36,7 @@ export function Heading({
       return (
         <h3
           className={mergeClassNames(
-            "text-2xl text-yellow-900 dark:text-orange-200",
+            "text-2xl text-orange-800 dark:text-orange-200",
             className,
           )}
         >
