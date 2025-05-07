@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply bg-stone-50 dark:bg-stone-950;
+  @apply bg-neutral-50 dark:bg-neutral-800;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;

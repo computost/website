@@ -40,7 +40,7 @@ function DropdownNavigationMenuItem({
     <DropdownMenu.DropdownMenuItem asChild>
       <Link
         className={mergeClassNames(
-          "block bg-gradient-to-b pt-1.5 pr-2 pb-1.5 pl-2 uppercase transition",
+          "block bg-gradient-to-b pt-1.5 pr-2 pb-1.5 pl-2 text-orange-900 uppercase transition dark:text-orange-200",
           pathname === to
             ? "from-orange-300 dark:from-orange-800"
             : "hover:from-orange-200 focus:from-orange-200 dark:hover:from-orange-900 dark:focus:from-orange-900",
@@ -64,7 +64,7 @@ function InlineNavigationMenuItem({
       <RadixNavigationMenu.Link asChild>
         <Link
           className={mergeClassNames(
-            "block bg-radial pt-1.5 pr-2 pb-1.5 pl-2 uppercase transition",
+            "block bg-radial pt-1.5 pr-2 pb-1.5 pl-2 text-orange-900 uppercase transition dark:text-orange-200",
             pathname === to
               ? "from-orange-300 dark:from-orange-800"
               : "hover:from-orange-200 focus:from-orange-200 dark:hover:from-orange-900 dark:focus:from-orange-900",

@@ -9,7 +9,7 @@ export function Card({
   return (
     <article
       className={mergeClassNames(
-        "flex flex-col gap-4 bg-green-50 p-4 dark:bg-green-950",
+        "flex flex-col gap-4 rounded-sm border border-[#2f2f2f] bg-green-50 p-4 dark:bg-[#121212]",
         className,
       )}
     >

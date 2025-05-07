@@ -25,7 +25,7 @@ export function Heading({
       return (
         <h2
           className={mergeClassNames(
-            "text-3xl text-emerald-900 dark:text-emerald-100",
+            "text-3xl font-bold text-emerald-900 dark:text-orange-200",
             className,
           )}
         >
@@ -36,7 +36,7 @@ export function Heading({
       return (
         <h3
           className={mergeClassNames(
-            "text-2xl font-bold text-yellow-900 dark:text-amber-200",
+            "text-2xl text-yellow-900 dark:text-orange-200",
             className,
           )}
         >
